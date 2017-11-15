@@ -1,0 +1,69 @@
+[debug] [2017-11-15T00:22:56.140Z] ----------------------------------------------------------------------
+[debug] [2017-11-15T00:22:56.141Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init functions
+[debug] [2017-11-15T00:22:56.142Z] CLI Version:   3.15.0
+[debug] [2017-11-15T00:22:56.142Z] Platform:      darwin
+[debug] [2017-11-15T00:22:56.142Z] Node Version:  v9.1.0
+[debug] [2017-11-15T00:22:56.142Z] Time:          Tue Nov 14 2017 16:22:56 GMT-0800 (PST)
+[debug] [2017-11-15T00:22:56.142Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-15T00:22:56.153Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-11-15T00:22:56.153Z] > authorizing via signed-in user
+[info] 
+     🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥     🔥🔥🔥     🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥     🔥🔥 🔥🔥       🔥🔥     🔥🔥  🔥🔥   🔥🔥  🔥🔥       🔥🔥
+     🔥🔥🔥🔥🔥🔥    🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥   🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥    🔥🔥  🔥🔥       🔥🔥     🔥🔥 🔥🔥     🔥🔥       🔥🔥 🔥🔥
+     🔥🔥       🔥🔥🔥🔥 🔥🔥     🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥     🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/wade.armstrong/repos/senior-challenge
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2017-11-15T00:22:56.159Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-11-15T00:22:56.160Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/E6SBvVIlu36pcO1Ug2dlGWaXhc9nYxvYQNRKA47mFnWdhinjVqBms5_tj1XLCRea',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Nov 14 2017 16:22:56 GMT-0800 (PST)
+[debug] [2017-11-15T00:22:56.566Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-15T00:22:56.581Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ Tue Nov 14 2017 16:22:56 GMT-0800 (PST)
+[debug] [2017-11-15T00:22:57.239Z] <<< HTTP RESPONSE 200
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2017-11-15T00:23:05.759Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-15T00:23:05.759Z] > authorizing via signed-in user
+[debug] [2017-11-15T00:23:05.760Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-11-15T00:23:05.760Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/E6SBvVIlu36pcO1Ug2dlGWaXhc9nYxvYQNRKA47mFnWdhinjVqBms5_tj1XLCRea',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Nov 14 2017 16:23:05 GMT-0800 (PST)
+[debug] [2017-11-15T00:23:06.119Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-15T00:23:06.136Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/location-service-6a71d  
+ Tue Nov 14 2017 16:23:06 GMT-0800 (PST)
+[debug] [2017-11-15T00:23:06.628Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-15T00:23:06.628Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/location-service-6a71d/tokens  
+ Tue Nov 14 2017 16:23:06 GMT-0800 (PST)
+[debug] [2017-11-15T00:23:07.731Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-15T00:23:07.733Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/location-service-6a71d?updateMask=usageSettings { usageSettings: { consumerEnableStatus: 'ENABLED' } } 
+ Tue Nov 14 2017 16:23:07 GMT-0800 (PST)
+[debug] [2017-11-15T00:23:07.733Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/location-service-6a71d?updateMask=usageSettings { usageSettings: { consumerEnableStatus: 'ENABLED' } } 
+ Tue Nov 14 2017 16:23:07 GMT-0800 (PST)
+[info] ✔  Wrote functions/package.json
+[info] ✔  Wrote functions/index.js
+[debug] [2017-11-15T00:23:08.992Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-15T00:23:09.246Z] <<< HTTP RESPONSE 200
