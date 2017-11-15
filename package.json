@@ -1,0 +1,15 @@
+{
+  "name": "senior-challenge",
+  "version": "1.0.0",
+  "description": "a challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@stash.corp.synacor.com:7999/~wade.armstrong/senior-challenge.git"
+  },
+  "author": "Synacor",
+  "license": "UNLICENSED"
+}
