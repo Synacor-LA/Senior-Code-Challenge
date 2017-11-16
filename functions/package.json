@@ -9,6 +9,7 @@
     "logs": "firebase functions:log"
   },
   "dependencies": {
+    "@google/maps": "^0.4.5",
     "firebase-admin": "~5.4.2",
     "firebase-functions": "^0.7.1"
   },
