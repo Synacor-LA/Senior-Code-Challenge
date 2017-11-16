@@ -1,6 +1,8 @@
+# Synacor Senior Developer Code Challenge
+
 At Synacor, we often write microservices as facades for one or more third-party services. These microservices fulfill two purposes:
 
-* They enable us to make the calls that make sense for our uses, not the calls that the third-party provider designed in (AKA, massaging data to better fit our needs)
+* They enable us to make the calls that make sense for our uses, not the calls that the third-party provider designed in (AKA massaging data to better fit our needs)
 * Caching, of course
 
 We’d like to see how you can handle working with this kind of a product.
@@ -14,11 +16,11 @@ We’d like to see how you can handle working with this kind of a product.
 
 ## The Challenge
 
-We have a third-party provider who gives us weather for given locations. Their API response includes all of their weather data for a single location. Our front-end displays a _limited subset_ of that weather data for _multiple_ user-favorited locations.
+We have a third-party provider who gives us weather for given locations. Their API response includes all of their weather data for a single location. Our front-end displays a _limited subset_ of that weather data for _multiple_ user-favorited locations. (The front-end handles management of user favorites through a separate service; in this case, just go ahead and choose 5 locations).
 
-There is a second API which we use to translate user-favorited locations -- e.g. “Baltimore, MD” to the latitude/longitude dyad required by our weather partner, e.g. “39.29, -76.61”
+There is a second API which we use to translate user-favorited locations -- e.g. “Baltimore, MD” -- to the latitude/longitude dyad required by our weather partner, e.g. “39.29, -76.61”
 
-We need an internal API that serves as a facade for these two services, allowing our developers to make a single API request providing multiple favorite locations, and receiving back only the weather elements we’ll use, for those locations.
+We need an internal API that serves as a facade for these two services, allowing our front end developers to make a single API request to power the UI of the entire widget. You're service will field these requests which contain multiple location values (e.g., ["Baltimore, MD", "Reston, VA", "Playa Vista, CA"]), and return just the information needed by the UI. The UI is expecting the following data points, for each location, to create an entry: Location, Temperature, Icon URL.
 
 ## Request and response formats
 
@@ -163,7 +165,8 @@ Will return
 
 ## Acceptance criteria
 
-You may use PHP, Go, or Node.js to complete this task
+You may use PHP, Go, or Node.js to complete this task.
+
 * Code must be written by you, with minimal libraries or dependencies.
 
 	* If you use Go, please try to use only the stdlib.
@@ -171,8 +174,6 @@ You may use PHP, Go, or Node.js to complete this task
 	* For PHP, please use version 7. If you choose to use a framework, you may use Lumen.
 
 * Assume your service is behind a reverse proxy, and attempt to return sensible cache headers.
-* Expect that given users request weather from their favorite locations at least 2x/day
-* Users may change their favorite locations, but rarely change all locations at once and rarely change more than once a day
-* Your service should be fault-tolerant and should operate well if restarted
-* Provide unit tests
+* Our providers update their current temperature readings every 10 minutes.
+* Provide unit tests (really, we test everything at Synacor!)
 * Document your API in a README.md (or another format if you have a tool that you prefer, and which distributes documentation that we can read in a text editor or Web browser).
