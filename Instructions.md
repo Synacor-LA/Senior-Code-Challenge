@@ -34,7 +34,7 @@ We have two CORS-enabled API endpoints:
 ### Location
 https://us-central1-location-service-6a71d.cloudfunctions.net/getLatLong?city={city}&state={st}
 
-Get the geocoded information for the city and state.
+Get the geocoded information for the city and state. For example:
 
 ```
 GET  https://us-central1-location-service-6a71d.cloudfunctions.net/getLatLong?city=baltimore&state=md
@@ -108,7 +108,7 @@ Will return:
 ### Weather
 https://weathersync.herokuapp.com/weather/$lat,$lng
 
-Get weather for a given latitude and longitude
+Get weather for a given latitude and longitude. For example:
 
 ```
 GET https://weathersync.herokuapp.com/weather/39.2903848,-76.6121893
@@ -164,13 +164,15 @@ Will return
 ## Acceptance criteria
 
 You may use PHP, Go, or Node.js to complete this task
-Code must be written by you, with minimal libraries or dependencies.
-If you use Go, please try to use only the stdlib.
-If you use Node, you may use any LTS version you prefer, and also use Express, Koa, or Hapi, and a test framework of your choice.
-For PHP, please use version 7. If you choose to use a framework, you may use Lumen.
-Assume your service is behind a reverse proxy, and attempt to return sensible cache headers.
-Expect that given users request weather from their favorite locations at least 2x/day
-Users may change their favorite locations, but rarely change all locations at once and rarely change more than once a day
-Your service should be fault-tolerant and should operate well if restarted
-Provide unit tests
-Document your API in a README.md (or another format if you have a tool that you prefer, and which distributes documentation that we can read in a text editor or Web browser).
+* Code must be written by you, with minimal libraries or dependencies.
+
+	* If you use Go, please try to use only the stdlib.
+	* If you use Node, you may use any LTS version you prefer, and also use Express, Koa, or Hapi, and a test framework of your choice.
+	* For PHP, please use version 7. If you choose to use a framework, you may use Lumen.
+
+* Assume your service is behind a reverse proxy, and attempt to return sensible cache headers.
+* Expect that given users request weather from their favorite locations at least 2x/day
+* Users may change their favorite locations, but rarely change all locations at once and rarely change more than once a day
+* Your service should be fault-tolerant and should operate well if restarted
+* Provide unit tests
+* Document your API in a README.md (or another format if you have a tool that you prefer, and which distributes documentation that we can read in a text editor or Web browser).

@@ -5,3 +5,5 @@ This code challenge is an extension of our existing Junior challenge. It has the
 In order to do this, we supplement the weather API with a separate location lookup API, seen here, so that the developer needs to do some work.
 
 This challenge is language-agnostic.
+
+Instructions are in Instructions.md
