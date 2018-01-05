@@ -18,9 +18,9 @@ We’d like to see how you can handle working with this kind of a product.
 
 We have a third-party provider who gives us weather for given locations. Their API response includes all of their weather data for a single location. Our front-end displays a _limited subset_ of that weather data for _multiple_ user-favorited locations. (The front-end handles management of user favorites through a separate service; in this case, just go ahead and choose 5 locations).
 
-There is a second API which we use to translate user-favorited locations -- e.g. “Baltimore, MD” -- to the latitude/longitude dyad required by our weather partner, e.g. “39.29, -76.61”
+There is a second API which we use to translate user-favorited locations -- e.g. “Baltimore, MD” -- to the latitude/longitude dyad required by our weather partner, e.g. “39.29, -76.61”. This API provider is pretty flaky, so handling their slowness and errors is a significant issue for us.
 
-We need an internal API that serves as a facade for these two services, allowing our front end developers to make a single API request to power the UI of the entire widget. You're service will field these requests which contain multiple location values (e.g., ["Baltimore, MD", "Reston, VA", "Playa Vista, CA"]), and return just the information needed by the UI. The UI is expecting the following data points, for each location, to create an entry: Location, Temperature, Icon URL.
+We need an internal API that serves as a facade for these two services, allowing our front end developers to make a single API request to power the UI of the entire widget. Your service will field these requests which contain multiple location values (e.g., ["Baltimore, MD", "Reston, VA", "Playa Vista, CA"]), and return just the information needed by the UI. The UI is expecting the following data points, for each location, to create an entry: Location, Temperature, Icon URL.
 
 ## Request and response formats
 
@@ -28,6 +28,7 @@ Please feel free to design this API as you see best. However, it should:
 
 * Take multiple locations, each in a “City, St.” format
 * For each location, return the location, temperature, and a URL pointing to an icon for the weather type
+* Fail gracefully, or otherwise handle well, an error from either API
 
 ## Third-Party APIs
 
