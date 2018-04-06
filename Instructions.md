@@ -179,8 +179,8 @@ You may use PHP, Go, or Node.js to complete this task.
 * Code must be written by you, with minimal libraries or dependencies.
 
 	* If you use Go, please try to use only the stdlib.
-	* If you use Node, you may use any LTS version you prefer, and also use Express, Koa, or Hapi, and a test framework of your choice.
 	* For PHP, please use version 7. If you choose to use a framework, you may use Lumen.
+	* If you use Node, you may use any LTS version you prefer, and also use Express, Koa, or Hapi, and a test framework of your choice.
 
 * Assume your service is behind a reverse proxy, and attempt to return sensible cache headers.
 * **Handle provider errors reasonably.**
