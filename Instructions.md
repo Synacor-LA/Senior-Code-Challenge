@@ -117,56 +117,56 @@ Will return:
 > _Note:_ The value you need there is in `geometry.location`.
 
 ### Weather
-https://weathersync2.herokuapp.com/forecast/$lat,$lng
+https://weathersync.herokuapp.com/forecast/$lat,$lng
 
 Get weather for a given latitude and longitude. For example:
 
 ```
-GET https://weathersync2.herokuapp.com/forecast/39.2903848,-76.6121893
+GET https://weathersync.herokuapp.com/forecast/39.2903848,-76.6121893
 ```
 
 Will return
 
 ```json
 {
-	coord: {
-		lon: -76.61,
-		lat: 39.29
+	"coord": {
+		"lon": -76.61,
+		"lat": 39.29
 	},
-	weather: [{
-		id: 804,
-		main: "Clouds",
-		description: "overcast clouds",
-		icon: "04n"
+	"weather": [{
+		"id": 804,
+		"main": "Clouds",
+		"description": "overcast clouds",
+		"icon": "04n"
 	}],
-	base: "stations",
-	main: {
-		temp: 282.48,
-		pressure: 1019,
-		humidity: 87,
-		temp_min: 281.15,
-		temp_max: 284.15
+	"base": "stations",
+	"main": {
+		"temp": 282.48,
+		"pressure": 1019,
+		"humidity": 87,
+		"temp_min": 281.15,
+		"temp_max": 284.15
 	},
-	visibility: 16093,
-	wind: {
-		speed: 1.69,
-		deg: 237.501
+	"visibility": 16093,
+	"wind": {
+		"speed": 1.69,
+		"deg": 237.501
 	},
-	clouds: {
-		all: 90
+	"clouds": {
+		"all": 90
 	},
-	dt: 1510797120,
-	sys: {
-		type: 1,
-		id: 1315,
-		message: 0.17,
-		country: "US",
-		sunrise: 1510833088,
-		sunset: 1510869042
+	"dt": 1510797120,
+	"sys": {
+		"type": 1,
+		"id": 1315,
+		"message": 0.17,
+		"country": "US",
+		"sunrise": 1510833088,
+		"sunset": 1510869042
 	},
-	id: 4347778,
-	name: "Baltimore",
-	cod: 200
+	"id": 4347778,
+	"name": "Baltimore",
+	"cod": 200
 }
 ```
 
@@ -204,8 +204,8 @@ GET https://weathersync.herokuapp.com/location
 Will return:
 ```json
 {
-	city: "El Segundo",
-	region_code: "CA"
+	"city": "El Segundo",
+	"region_code": "CA"
 }
 ```
 
